@@ -1,0 +1,8 @@
+@import "../../global styles/variables";
+
+.card {
+  background-color: $color-white;
+  border-radius: .8rem;
+  padding: 3rem;
+  box-shadow: $box-shadow-2;
+}
