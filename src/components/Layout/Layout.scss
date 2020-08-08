@@ -1,0 +1,26 @@
+@import "../../global styles/variables";
+
+.layout {
+  display: grid;
+  grid-template-columns: 15vw 1fr;
+  grid-template-rows: min-content 1fr;
+  min-height: 100vh;
+  width: 100%;
+
+  &__navbar {
+    background-color: $color-white;
+    padding: 1rem 4rem;
+  }
+
+  &__sidebar {
+    box-shadow: $box-shadow-1;
+    border-bottom-right-radius: 4rem;
+    background-color: $color-white;
+    grid-row: 1 / -1;
+
+  }
+
+  &__maincontent {
+    padding: 4rem;
+  }
+}

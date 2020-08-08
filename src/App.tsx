@@ -1,14 +1,15 @@
 import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
 
-import { ReactComponent as Wallet} from "./assets/icons/wallet.svg";
+// pages
+import DashboardPage from "./pages/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Let's go man</h1>
-      <p>May God help me through this</p>
-      <Wallet className="icon" />
-    </div>
+    <Switch>
+      <Route exact path="/dashboard" component={DashboardPage} />
+      <Redirect to="/dashboard" />
+    </Switch>
   );
 }
 
