@@ -18,7 +18,7 @@ body {
   line-height: 1.6;
   font-size: 1.6rem;
   overflow-x: hidden;
-  background-color: $color-white;
+  background-color: $silk-white;
 }
 
 %headings {
@@ -62,5 +62,6 @@ textarea {
   font-family: inherit;
   font-weight: inherit;
   outline: 0;
+  border: 0;
   color: inherit;
 }
