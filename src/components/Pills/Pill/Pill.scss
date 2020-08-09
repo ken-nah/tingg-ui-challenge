@@ -1,0 +1,81 @@
+@import "../../../global styles/variables";
+
+.pill {
+  background-color: rgba($light-blue, 0.3);
+  border-radius: 5px;
+  border: 1px solid $light-blue;
+  padding: 1rem 3rem;
+  min-width: 23rem;
+
+  &__blue {
+    p {
+      color: $powder-blue;
+    }
+    .pill__description--image {
+      background-color: $powder-blue;
+    }
+  }
+
+  &__maroon {
+    p {
+      color: $color-maroon;
+    }
+    .pill__description--image {
+      background-color: $color-maroon;
+    }
+  }
+
+  &__yellow {
+    p {
+      color: $color-yellow;
+    }
+    .pill__description--image {
+      background-color: $color-yellow;
+    }
+  }
+
+  &__powderblue {
+    p {
+      color: $color-primary;
+    }
+    .pill__description--image {
+      background-color: $color-primary;
+    }
+  }
+
+  span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+    &--image {
+      border-radius: 5px;
+      background-color: $powder-blue;
+      display: inline-block;
+      position: relative;
+      height: 4rem;
+      width: 4rem;
+      margin-right: 2rem;
+    }
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  p {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+}

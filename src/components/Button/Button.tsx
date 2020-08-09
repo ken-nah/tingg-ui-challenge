@@ -4,10 +4,18 @@ import "./Button.scss";
 
 interface Props {
   children: React.ReactNode;
+  icon?: React.FC<React.SVGProps<SVGSVGElement>>;
 }
 
 const Button: React.FC<Props> = (props) => {
-  return <button className="btn">{props.children}</button>;
+  const { icon: Icon } = props;
+
+  return (
+    <button className="btn">
+      {Icon && <Icon />}
+      {props.children}
+    </button>
+  );
 };
 
 export default Button;
