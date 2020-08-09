@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./Sidebar.scss";
 
@@ -25,10 +25,10 @@ function Sidebar() {
         <MenuItem icon={DashboardIcon} path="/dashboard" text="Dashboard" />
         <MenuItem icon={ReportsIcon} path="/reports" text="Reports" />
         <MenuItem icon={MessageIcon} path="/messages" text="Messages" />
-        <MenuItem icon={ContactIcon} path="/dashboard" text="Contacts" />
-        <MenuItem icon={CreditIcon} path="/dashboard" text="Accounts" />
-        <MenuItem icon={AccountIcon} path="/dashboard" text="Credits" />
-        <MenuItem icon={MailIcon} path="/dashboard" text="Contact us" />
+        <MenuItem icon={ContactIcon} path="/contact" text="Contacts" />
+        <MenuItem icon={CreditIcon} path="/credit" text="Accounts" />
+        <MenuItem icon={AccountIcon} path="/account" text="Credits" />
+        <MenuItem icon={MailIcon} path="/mail" text="Contact us" />
       </ul>
       <div className="sidebar__dstv">
         <img src={Dstv} alt="dstv icon" />
@@ -51,8 +51,10 @@ const MenuItem: React.FC<MenuItemProps> = (props) => {
   const { icon: Icon, path, text } = props;
   return (
     <li>
+      <NavLink to={path} activeClassName="active">
+        {text}
+      </NavLink>
       <Icon />
-      <Link to={path}>{text}</Link>
     </li>
   );
 };

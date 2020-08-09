@@ -1,0 +1,107 @@
+@import "../../global styles/variables";
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.datatable {
+  background-color: $color-white;
+  border-radius: 0.3rem;
+  box-shadow: $box-shadow-2;
+  font-size: 1.5rem;
+  min-width: 110rem;
+  color: $text-color;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+      background-color: $light-gray;
+    }
+
+    th {
+      padding: 1rem 3rem;
+      text-align: left;
+      border-top: 1px solid $light-gray;
+      font-size: 1.4rem;
+      color: $dark-blue;
+
+      &:last-child {
+        svg {
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid $light-gray;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $light-gray;
+      }
+    }
+
+    td {
+      padding: 1rem 3rem;
+
+      svg {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+  }
+}
+
+.pagination {
+  @include flex-center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  justify-content: flex-end;
+  padding: 2rem 0;
+
+  &__rows {
+    @include flex-center;
+    margin: 0 2rem;
+    box-shadow: $box-shadow-2;
+    padding: 0.2rem 1rem;
+
+    img {
+      transform: translateY(-2px);
+      width: 1.8rem;
+      margin-left: 2px;
+    }
+  }
+
+  &__pages {
+    input {
+      border: 1px solid $light-gray;
+      border-radius: 2px;
+      box-shadow: $box-shadow-2;
+      font-weight: 400;
+      padding: 0.5rem 1rem;
+      margin: 0 2rem;
+      width: 5rem;
+    }
+  }
+
+  &__buttons {
+    @include flex-center;
+    margin-left: 2rem;
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+    padding: 5px 1rem;
+
+    img {
+      border-right: 1px solid $light-gray;
+      height: 1.1rem;
+      width: 1.1rem;
+      transform: translateY(-2px);
+      margin-right: 5px;
+    }
+  }
+}

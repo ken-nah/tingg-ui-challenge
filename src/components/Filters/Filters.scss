@@ -1,0 +1,33 @@
+@import "../../global styles/variables";
+
+@mixin filter-input {
+  border: 1px solid #f7f7f7;
+  border-radius: 4px;
+  padding: 1rem 3rem;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+
+  input {
+    @include filter-input;
+    min-width: 45rem;
+    margin-right: 5rem;
+  }
+
+  &__range {
+    @include filter-input;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 0.7rem 2rem;
+
+    img {
+      height: 1.6rem;
+      width: 1.6rem;
+      margin-left: 2rem;
+    }
+  }
+}

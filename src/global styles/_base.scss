@@ -15,7 +15,7 @@ body {
   font-family: $font-primary;
   font-weight: 400;
   color: $text-color;
-  line-height: 1.6;
+  line-height: 1.5;
   font-size: 1.6rem;
   overflow-x: hidden;
   background-color: $silk-white;
@@ -30,7 +30,6 @@ h1,
 h2 {
   @extend %headings;
   font-weight: 700;
-  line-height: 1.4;
 }
 
 h3,

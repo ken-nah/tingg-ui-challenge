@@ -24,7 +24,9 @@
 
     li {
       display: flex;
+      flex-direction: row-reverse;
       align-items: center;
+      justify-content: flex-end;
       margin: 5rem 0;
 
       &:hover {
@@ -49,6 +51,16 @@
 
         &:hover {
           color: $color-maroon;
+        }
+      }
+
+      .active {
+        color: $color-maroon;
+
+        & + {
+          svg {
+            fill: $color-maroon;
+          }
         }
       }
     }

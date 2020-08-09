@@ -1,0 +1,71 @@
+@import "../../global styles/variables";
+
+.messages {
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__datepicker {
+    background-color: $color-white;
+    box-shadow: $box-shadow-2;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid $light-gray;
+
+    span {
+      margin: 0 0.7rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: $dark-gray;
+      margin-right: 0.7rem;
+    }
+
+    img {
+      height: 1.6rem;
+      width: 1.6rem;
+      transform: translateY(-2px);
+
+      &:last-child {
+        height: 1.2rem;
+        width: 1.2rem;
+      }
+    }
+  }
+
+  &__overview {
+    background-color: $color-white;
+    margin: 4rem -4rem 0;
+    padding: 4rem;
+  }
+
+  &__links {
+    a {
+      color: $text-color;
+      display: inline-block;
+      font-size: 1.7rem;
+      font-weight: 500;
+      padding: 0 5rem;
+
+      &:last-child {
+        color: $color-primary;
+        border-bottom: 3px solid $color-primary;
+      }
+    }
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+  }
+
+  &__table {
+    margin-top: 5rem;
+  }
+}
