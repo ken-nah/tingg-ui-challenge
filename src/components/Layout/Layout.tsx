@@ -2,6 +2,8 @@ import React from "react";
 
 import "./Layout.scss";
 
+import ChatIcon from "../../assets/icons/chat.svg";
+
 import Navbar from "./Navbar/Navbar";
 import Sidebar from "./Sidebar/Sidebar";
 
@@ -20,9 +22,20 @@ const Layout: React.FC<Props> = (props) => {
           <Sidebar />
         </span>
       </aside>
-      <main className="layout__maincontent">{props.children}</main>
+      <main className="layout__maincontent">
+        <Chat />
+        {props.children}
+      </main>
     </div>
   );
 };
+
+function Chat() {
+  return (
+    <div className="layout__chat">
+      <img src={ChatIcon} alt="chat icon" />
+    </div>
+  );
+}
 
 export default Layout;

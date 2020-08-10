@@ -43,6 +43,13 @@
     }
   }
 
+  &__bg-white {
+    background-color: $color-white;
+    border: 0;
+    box-shadow: $box-shadow-2;
+    min-width: 30rem;
+  }
+
   span {
     font-size: 1.2rem;
     font-weight: 700;
@@ -77,5 +84,18 @@
   p {
     font-size: 2.4rem;
     font-weight: 700;
+  }
+
+  &__message {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    max-width: 80%;
+
+    span {
+      color: $color-primary;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
   }
 }

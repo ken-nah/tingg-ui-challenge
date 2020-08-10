@@ -1,0 +1,150 @@
+@import "../../global styles/variables";
+
+.reports {
+  &__metadata {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+    column-gap: 3rem;
+  }
+
+  &__credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    &--wallet {
+      background-color: rgba($light-blue, 0.5);
+      border: 1px solid $light-blue;
+      border-radius: 50%;
+      position: relative;
+      margin: 1rem 0;
+      height: 5rem;
+      width: 5rem;
+
+      svg {
+        fill: $color-primary;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+
+    p {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+
+    span {
+      font-size: 1.4rem;
+    }
+
+    button {
+      margin-top: 4rem;
+    }
+  }
+
+  &__graph {
+    &--intro {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        color: $color-primary;
+        font-weight: 700;
+        font-size: 1.4rem;
+      }
+    }
+
+    &--chart {
+      margin: 2rem 0;
+      font-size: 1.3rem;
+    }
+  }
+
+  &__monthpicker {
+    display: flex;
+    align-items: center;
+    background-color: rgba($light-blue, 0.5);
+    border-radius: 4px;
+    padding: 5px;
+
+    svg {
+      height: 1.8rem;
+      width: 1.8rem;
+      transform: translateY(-2px);
+    }
+
+    p {
+      font-size: 1.4rem;
+      margin: 0 3px;
+    }
+
+    img {
+      height: 1.5rem;
+    }
+  }
+
+  &__labels {
+    display: flex;
+  }
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  margin: 0 4rem;
+
+  &__indicator {
+    padding: 2px;
+    border-radius: 50%;
+
+    &--maroon {
+      border: 2px solid $color-maroon;
+    }
+
+    &--yellow {
+      border: 2px solid $color-yellow;
+    }
+
+    &--blue {
+      border: 2px solid $color-primary;
+    }
+  }
+
+  &__value {
+    border-radius: 50%;
+    height: .8rem;
+    width: .8rem;
+
+    &--maroon {
+      background-color: $color-maroon;
+    }
+
+    &--yellow {
+      background-color: $color-yellow;
+    }
+
+    &--blue {
+      background-color: $color-primary;
+    }
+  }
+
+  span {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    transform: translateY(2px);
+  }
+}
