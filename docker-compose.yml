@@ -1,0 +1,13 @@
+version: "3.3"
+services:
+  tingg_ui_challenge:
+    image: kennjogu/ken-njogu:ting-ui-challenge
+    build: .
+    #target: runtime
+    ports:
+      - "80:80"
+    expose:
+      - "80"
+    #volumes: - .:/app
+    environment:
+      PROFILE: prod
