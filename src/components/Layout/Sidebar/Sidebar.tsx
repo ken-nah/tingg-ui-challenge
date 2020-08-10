@@ -52,9 +52,9 @@ const MenuItem: React.FC<MenuItemProps> = (props) => {
   return (
     <li>
       <NavLink to={path} activeClassName="active">
+        <Icon />
         {text}
       </NavLink>
-      <Icon />
     </li>
   );
 };

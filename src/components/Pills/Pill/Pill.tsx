@@ -9,13 +9,18 @@ interface Props {
   title: string;
   number: string;
   color: Color;
+  whiteBackground?: boolean;
 }
 
 const Pill: React.FC<Props> = (props) => {
-  const { number, color, icon: Icon, title } = props;
+  const { number, color, icon: Icon, title, whiteBackground } = props;
 
   return (
-    <div className={`pill pill__${color}`}>
+    <div
+      className={`pill pill__${color} ${
+        whiteBackground ? "pill__bg-white" : ""
+      }`}
+    >
       <span>{title}</span>
       <div className="pill__description">
         <div className="pill__description--image">

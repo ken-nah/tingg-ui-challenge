@@ -1,0 +1,15 @@
+export const fakeData = [
+  { name: "01 Jan", Failed: 2000, Pending: 400, Delivered: 1350 },
+  { name: "24 Jan", Failed: 500, Pending: 1398, Delivered: 450 },
+  { name: "03 Feb", Failed: 400, Pending: 1800, Delivered: 1200 },
+  { name: "14 Feb", Failed: 1000, Pending: 2000, Delivered: 500 },
+  { name: "05 Mar", Failed: 1890, Pending: 700, Delivered: 2000 },
+  { name: "16 Mar", Failed: 1000, Pending: 1200, Delivered: 500 },
+  { name: "09 Apr", Failed: 1500, Pending: 3000, Delivered: 350 },
+  { name: "28 Apr", Failed: 1500, Pending: 1200, Delivered: 800 },
+  { name: "09 May", Failed: 490, Pending: 3400, Delivered: 1000 },
+  { name: "10 Jun", Failed: 700, Pending: 2000, Delivered: 1150 },
+  { name: "19 Jun", Failed: 900, Pending: 1000, Delivered: 500 },
+  { name: "20 Aug", Failed: 2500, Pending: 950, Delivered: 350 },
+  { name: "30 Aug", Failed: 1800, Pending: 600, Delivered: 800 },
+];
